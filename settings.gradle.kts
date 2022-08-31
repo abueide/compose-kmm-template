@@ -6,7 +6,7 @@ pluginManagement {
     }
 }
 
-rootProject.name = "mnp"
+rootProject.name = "chiachat"
 include(":androidApp")
 include(":iosCompose")
 include(":sharedCompose")

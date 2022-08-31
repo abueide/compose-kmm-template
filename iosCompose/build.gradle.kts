@@ -1,11 +1,10 @@
-import org.jetbrains.compose.compose
 import org.jetbrains.compose.experimental.dsl.IOSDevices
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version Versions.composeIos
+    id("org.jetbrains.compose") version Versions.composeMultiplatform
 }
 
 version = "1.0-SNAPSHOT"

@@ -39,18 +39,6 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.5.0")
     implementation(Deps.Koin.compose)
 
-    with(Deps.Compose) {
-        implementation(uiGraphics)
-        implementation(foundationLayout)
-        implementation(navigation)
-        implementation(coilCompose)
-        implementation(accompanistNavigationAnimation)
-        implementation(accompanistSwipeRefresh)
-        implementation(uiTooling)
-        implementation(material)
-        implementation(ui)
-    }
-
     // Tests
     testImplementation(Deps.Test.junitApi)
     testRuntimeOnly(Deps.Test.junitEngine)

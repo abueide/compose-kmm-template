@@ -1,8 +1,0 @@
-mutation signUp($data: UserInput!) {
-    signUp(data: $data){
-        email
-        userType
-        id
-        cognitoId
-    }
-}

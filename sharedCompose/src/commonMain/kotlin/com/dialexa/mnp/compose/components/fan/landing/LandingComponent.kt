@@ -6,9 +6,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.dialexa.mnp.compose.components.Component
-import com.dialexa.mnp.compose.components.auth.fanOrAthlete.FanOrAthleteComponent
-import com.dialexa.mnp.compose.components.auth.login.LoginComponent
-import com.dialexa.mnp.compose.components.auth.register.RegisterComponent
 import com.dialexa.mnp.compose.shared.PrimaryTextButton
 import com.dialexa.mnp.compose.shared.RoundedPrimaryButton
 import com.dialexa.mnp.compose.theme.Typography
@@ -34,12 +31,12 @@ class LandingComponent : Component() {
             RoundedPrimaryButton(
                 text = "Register",
                 modifier = Modifier.align(Alignment.Center).fillMaxWidth(),
-                onClick = { navigationService.navigate(FanOrAthleteComponent()) }
+                onClick = {}
             )
             PrimaryTextButton(
                 text = "Login",
                 modifier = Modifier.align(Alignment.BottomCenter),
-                onClick = { navigationService.navigate(LoginComponent()) }
+                onClick = {}
             )
         }
     }

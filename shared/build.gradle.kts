@@ -1,8 +1,6 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    id(Plugin.Id.apollo)
-    id("com.rickclephas.kmp.nativecoroutines") version Versions.nativeCoroutines
     id(Plugin.Id.mokoResources)
 }
 
@@ -77,17 +75,6 @@ kotlin {
             iosX64Test.dependsOn(this)
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
-        }
-    }
-}
-
-apollo {
-    packageName.set("com.dialexa.mnp.apollo")
-    service("LocalMnpServer") {
-        packageName.set("com.dialexa.mnp.apollo")
-        introspection {
-            endpointUrl.set("http://localhost:3000/graphql/")
-            schemaFile.set(file("src/commonMain/graphql/com/dialexa/mnp/schema.graphqls"))
         }
     }
 }

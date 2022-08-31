@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version Versions.composeIos
+    id("org.jetbrains.compose") version Versions.composeMultiplatform
     id("com.android.library")
     id("kotlin-android-extensions")
 }

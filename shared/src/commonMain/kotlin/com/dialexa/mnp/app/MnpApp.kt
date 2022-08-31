@@ -1,7 +1,6 @@
 package com.dialexa.mnp.app
 
 import com.apollographql.apollo3.ApolloClient
-import com.dialexa.mnp.authentication.IdentityService
 import com.dialexa.mnp.toast.ToastService
 import com.liftric.cognito.idp.IdentityProviderClient
 import org.koin.core.module.dsl.singleOf
@@ -18,6 +17,5 @@ object MnpApp {
         single { cognitoClient }
         single { apolloClient }
         singleOf(::ToastService)
-        singleOf(::IdentityService)
     }
 }

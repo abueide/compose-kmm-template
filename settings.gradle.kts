@@ -8,6 +8,7 @@ pluginManagement {
 
 rootProject.name = "chiachat"
 include(":androidApp")
-include(":iosCompose")
-include(":sharedCompose")
+include(":iosApp")
+include(":desktopApp")
+include(":ui")
 include(":shared")

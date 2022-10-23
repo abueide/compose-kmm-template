@@ -23,7 +23,7 @@ object Versions {
     const val activityCompose = "1.4.0-beta01"
     const val navCompose = "2.4.2"
     const val accompanist = "0.24.11-rc"
-    const val composeMultiplatform = "1.2.0-alpha01-dev774"
+    const val composeMultiplatform = "1.2.0"
     const val nativeCoroutines = "0.12.5"
     const val cognitoIdp = "2.5.0"
     const val moko = "0.20.1"

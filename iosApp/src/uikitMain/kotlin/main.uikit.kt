@@ -41,7 +41,7 @@ class SkikoAppDelegate : UIResponder, UIApplicationDelegateProtocol {
         window = UIWindow(frame = UIScreen.mainScreen.bounds)
         val app = ComposeApp()
         val mainComponent = MainComponent()
-        window!!.rootViewController = Application("myNILpay") {
+        window!!.rootViewController = Application("chiachat") {
             Column {
                 Spacer(modifier = Modifier.size(48.dp))
                 mainComponent.view()

@@ -1,14 +1,12 @@
 plugins {
     kotlin("multiplatform")
     id("org.jetbrains.compose") version Versions.composeMultiplatform
-    id("com.android.library")
-    id("kotlin-android-extensions")
 }
 
 version = "1.0"
 
 kotlin {
-    android()
+    jvm()
     js(IR) {
         browser {
             commonWebpackConfig {
@@ -35,8 +33,8 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
-        val androidTest by getting
+        val jvmMain by getting
+        val jvmTest by getting
         val jsMain by getting
         val jsTest by getting
         val iosX64Main by getting
@@ -57,18 +55,5 @@ kotlin {
             iosArm64Test.dependsOn(this)
             iosSimulatorArm64Test.dependsOn(this)
         }
-    }
-}
-
-android {
-    compileSdkVersion(31)
-    sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-    defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(31)
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
     }
 }

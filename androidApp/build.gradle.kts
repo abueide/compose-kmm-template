@@ -35,7 +35,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":sharedCompose"))
+    implementation(project(":ui"))
     implementation("androidx.activity:activity-compose:1.5.0")
     implementation(Deps.Koin.compose)
 

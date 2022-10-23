@@ -40,8 +40,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":sharedCompose"))
-
+                implementation(project(":ui"))
             }
         }
 

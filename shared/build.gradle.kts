@@ -1,7 +1,6 @@
 plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
-    id(Plugin.Id.mokoResources)
 }
 
 version = "1.0"
@@ -26,7 +25,6 @@ kotlin {
         podfile = project.file("../iosApp/Podfile")
         framework {
             baseName = "shared"
-            export(Deps.Moko.resourcesCommon)
         }
     }
 
@@ -38,7 +36,6 @@ kotlin {
                 api(Deps.Kotlinx.coroutines)
                 api(Deps.Koin.core)
                 api(Deps.Network.cognito)
-                api(Deps.Moko.resourcesCommon)
             }
         }
         val commonTest by getting {
@@ -46,13 +43,11 @@ kotlin {
                 api(kotlin("test"))
                 with(Deps.Test) {
                     api(coroutines)
-                    api(mokoResources)
                 }
             }
         }
         val jvmMain by getting {
             dependencies {
-                api(Deps.Moko.resourcesCompose)
             }
         }
         val jvmTest by getting
@@ -77,11 +72,4 @@ kotlin {
             iosSimulatorArm64Test.dependsOn(this)
         }
     }
-}
-
-multiplatformResources {
-    multiplatformResourcesPackage = "com.dialexa.mnp" // required
-    multiplatformResourcesClassName = "MR" // optional, default MR
-    iosBaseLocalizationRegion = "en" // optional, default "en"
-    multiplatformResourcesSourceSet = "commonMain"  // optional, default "commonMain"
 }

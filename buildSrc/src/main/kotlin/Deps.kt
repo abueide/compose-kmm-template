@@ -1,14 +1,14 @@
 object Versions {
     const val kotlin = "1.7.10"
-    const val detekt = "1.21.0-RC2"
+    const val detekt = "1.22.0-RC2"
     const val ktlint = "10.2.1"
-    const val coroutines = "1.6.3"
+    const val coroutines = "1.6.4"
     const val ktor = "2.0.1"
     const val protobuf = "1.3.0-RC"
     const val json = "1.3.2"
     const val mockito = "3.12.4"
     const val mockito_kotlin = "4.0.0"
-    const val sqlDelight = "2.0.0-alpha02"
+    const val sqlDelight = "2.0.0-alpha04"
     const val postgres = "42.3.4"
     const val koin = "3.2.0-beta-1"
     const val junit = "5.8.2"
@@ -26,7 +26,6 @@ object Versions {
     const val composeMultiplatform = "1.2.0"
     const val nativeCoroutines = "0.12.5"
     const val cognitoIdp = "2.5.0"
-    const val moko = "0.20.1"
 }
 
 object Plugin {
@@ -116,10 +115,6 @@ object Deps {
         }
     }
 
-    object Moko {
-        const val resourcesCommon = "dev.icerock.moko:resources:${Versions.moko}"
-        const val resourcesCompose = "dev.icerock.moko:resources-compose:${Versions.moko}"
-    }
 
     object Log {
         const val kermit = "co.touchlab:kermit:${Versions.kermit}"
@@ -131,7 +126,6 @@ object Deps {
         const val junitApi = "org.junit.jupiter:junit-jupiter-api:${Versions.junit}"
         const val junitEngine = "org.junit.jupiter:junit-jupiter-engine:${Versions.junit}"
         const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
-        const val mokoResources = "dev.icerock.moko:resources-test:${Versions.moko}"
     }
 
     object Sqldelight {

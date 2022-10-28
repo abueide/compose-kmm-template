@@ -7,6 +7,6 @@ import kotlin.js.JsExport
 @JsExport
 class Greeting {
     fun greeting(): String {
-        return "Hello, ${MR.strings.appName}!"
+        return "Hello, chiachat!"
     }
 }

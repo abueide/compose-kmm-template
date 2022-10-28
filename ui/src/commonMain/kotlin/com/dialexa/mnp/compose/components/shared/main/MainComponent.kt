@@ -25,7 +25,7 @@ class MainComponent : Component(), KoinComponent {
     override fun view() {
         AppTheme {
             Box(
-                modifier = Modifier.fillMaxSize()
+                modifier = Modifier.background(Color.Blue).fillMaxSize()
             ) {
                 val toast by toastService.currentToast.collectAsState()
                 toast?.let {

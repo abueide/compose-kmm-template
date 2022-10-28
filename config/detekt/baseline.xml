@@ -47,9 +47,9 @@
     <ID>WildcardImport:Buttons.kt$import androidx.compose.material.*</ID>
     <ID>WildcardImport:LandingComponent.kt$import androidx.compose.foundation.layout.*</ID>
     <ID>WildcardImport:com.dialexa.mnp.compose.components.fan.auth.login.LoginComponent.kt$import androidx.compose.runtime.*</ID>
-    <ID>WildcardImport:main.uikit.kt$import androidx.compose.foundation.layout.*</ID>
-    <ID>WildcardImport:main.uikit.kt$import kotlinx.cinterop.*</ID>
-    <ID>WildcardImport:main.uikit.kt$import platform.Foundation.*</ID>
-    <ID>WildcardImport:main.uikit.kt$import platform.UIKit.*</ID>
+    <ID>WildcardImport:com.chiachat.app.web.main.uikit.kt$import androidx.compose.foundation.layout.*</ID>
+    <ID>WildcardImport:com.chiachat.app.web.main.uikit.kt$import kotlinx.cinterop.*</ID>
+    <ID>WildcardImport:com.chiachat.app.web.main.uikit.kt$import platform.Foundation.*</ID>
+    <ID>WildcardImport:com.chiachat.app.web.main.uikit.kt$import platform.UIKit.*</ID>
   </CurrentIssues>
 </SmellBaseline>

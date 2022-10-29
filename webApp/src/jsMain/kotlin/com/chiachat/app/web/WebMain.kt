@@ -16,7 +16,7 @@ import org.jetbrains.skiko.wasm.onWasmReady
 fun main() {
   console.log("Test")
   onWasmReady {
-    val app = WebApp()
+    val app = CanvasDebugApp()
     Window("ChiaChat") {
       var counter by remember { mutableStateOf(0) }
       Box() {
